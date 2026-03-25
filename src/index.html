@@ -9,19 +9,42 @@
   <meta name="description" content="Patrick Putman is a security researcher and engineer based in Birmingham, Alabama. Focused on CI/CD security, cloud infrastructure, Kubernetes, and identity systems." />
   <meta name="author" content="Patrick Putman" />
   <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://patrickputman.dev/" />
+
+  <!-- Local SEO — geo signals for name+location indexing -->
+  <meta name="geo.region" content="US-AL" />
+  <meta name="geo.placename" content="Birmingham, Alabama" />
+  <meta name="geo.position" content="33.5186;-86.8104" />
+  <meta name="ICBM" content="33.5186, -86.8104" />
 
   <!-- Open Graph -->
-  <meta property="og:type" content="website" />
+  <meta property="og:type" content="profile" />
+  <meta property="og:profile:first_name" content="Patrick" />
+  <meta property="og:profile:last_name" content="Putman" />
   <meta property="og:title" content="Patrick Putman — Security Researcher &amp; Engineer" />
   <meta property="og:description" content="Security researcher and engineer based in Birmingham, Alabama. Focused on CI/CD, cloud, Kubernetes, and identity security." />
-  <meta property="og:url" content="https://patrickputman.dev" />
+  <meta property="og:url" content="https://patrickputman.dev/" />
+  <meta property="og:site_name" content="Patrick Putman" />
 
-  <!-- Structured Data (JSON-LD) — critical for name+location SEO -->
+  <!-- Sitemap discovery -->
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+
+  <!-- Identity linking — helps search engines associate profiles -->
+  <link rel="me" href="https://github.com/patrickputmansec" />
+  <link rel="me" href="https://linkedin.com/in/patrickputman" />
+  <link rel="me" href="mailto:putman.patrick@gmail.com" />
+
+  <!-- Mobile browser chrome color -->
+  <meta name="theme-color" content="#0a0a0f" />
+
+  <!-- Structured Data (JSON-LD) — name+location entity disambiguation -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Patrick Putman",
+    "givenName": "Patrick",
+    "familyName": "Putman",
     "jobTitle": "Security Researcher & Engineer",
     "url": "https://patrickputman.dev",
     "email": "putman.patrick@gmail.com",
@@ -31,6 +54,18 @@
       "addressRegion": "AL",
       "addressCountry": "US"
     },
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Stormbane Security",
+      "url": "https://www.stormbane.net"
+    },
+    "knowsAbout": [
+      "CI/CD Security",
+      "Cloud Security",
+      "Kubernetes Security",
+      "Identity Security",
+      "Attack Surface Management"
+    ],
     "sameAs": [
       "https://github.com/patrickputmansec",
       "https://linkedin.com/in/patrickputman",
