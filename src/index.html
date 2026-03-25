@@ -5,39 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Primary SEO -->
-  <title>Patrick — Security Researcher &amp; Engineer | [City, State]</title>
-  <meta name="description" content="Patrick is a security researcher and engineer based in [City, State]. Specializing in offensive security, infrastructure, and open-source tooling." />
-  <meta name="author" content="Patrick" />
+  <title>Patrick Putman — Security Researcher &amp; Engineer | Birmingham, Alabama</title>
+  <meta name="description" content="Patrick Putman is a security researcher and engineer based in Birmingham, Alabama. Focused on CI/CD security, cloud infrastructure, Kubernetes, and identity systems." />
+  <meta name="author" content="Patrick Putman" />
   <meta name="robots" content="index, follow" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Patrick — Security Researcher &amp; Engineer" />
-  <meta property="og:description" content="Security researcher and engineer based in [City, State]." />
-  <meta property="og:url" content="https://yoursite.com" />
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Patrick — Security Researcher &amp; Engineer" />
-  <meta name="twitter:description" content="Security researcher and engineer based in [City, State]." />
+  <meta property="og:title" content="Patrick Putman — Security Researcher &amp; Engineer" />
+  <meta property="og:description" content="Security researcher and engineer based in Birmingham, Alabama. Focused on CI/CD, cloud, Kubernetes, and identity security." />
+  <meta property="og:url" content="https://patrickputman.dev" />
 
   <!-- Structured Data (JSON-LD) — critical for name+location SEO -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
-    "name": "Patrick",
+    "name": "Patrick Putman",
     "jobTitle": "Security Researcher & Engineer",
-    "url": "https://yoursite.com",
+    "url": "https://patrickputman.dev",
+    "email": "putman.patrick@gmail.com",
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "[City]",
-      "addressRegion": "[State]",
+      "addressLocality": "Birmingham",
+      "addressRegion": "AL",
       "addressCountry": "US"
     },
     "sameAs": [
-      "https://github.com/yourusername",
-      "https://linkedin.com/in/yourusername"
+      "https://github.com/patrickputmansec",
+      "https://linkedin.com/in/patrickputman",
+      "https://www.stormbane.net"
     ]
   }
   </script>
@@ -47,7 +44,7 @@
 <body>
   <header class="site-header">
     <nav class="nav">
-      <span class="nav-name">Patrick</span>
+      <span class="nav-name">Patrick Putman</span>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#work">Work</a></li>
@@ -62,18 +59,20 @@
     <section class="hero" id="about">
       <div class="container">
         <p class="hero-eyebrow">Security Researcher &amp; Engineer</p>
-        <h1 class="hero-name">Patrick</h1>
+        <h1 class="hero-name">Patrick Putman</h1>
         <p class="hero-location">
           <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
             <circle cx="12" cy="10" r="3"/>
           </svg>
-          [City, State]
+          Birmingham, Alabama
         </p>
         <p class="hero-bio">
-          I build security tooling and research attack surfaces. I focus on
-          infrastructure security, offensive research, and open-source tools
-          that make security teams more effective.
+          I research and build tooling around the parts of the stack that move
+          fast and get exploited faster: CI/CD pipelines, cloud infrastructure,
+          Kubernetes, and identity systems. My focus is on finding and closing
+          the attack surface that modern organizations expose as they
+          scale — before someone else does.
         </p>
         <div class="hero-actions">
           <a href="#work" class="btn btn-primary">See My Work</a>
@@ -89,34 +88,18 @@
         <div class="grid">
           <article class="card">
             <div class="card-header">
-              <h3 class="card-title">Project Name</h3>
+              <h3 class="card-title">Beacon</h3>
               <span class="card-tag">Open Source</span>
             </div>
-            <p class="card-desc">Short description of what this project does and why it matters. Keep it one or two sentences.</p>
+            <p class="card-desc">
+              An attack surface scanner built for security researchers and
+              pentesters. Beacon runs passive surface scans safe enough for
+              unsolicited use, and supports active deep-probing modes for
+              authorized engagements — with a terminal UI for interactive
+              finding review.
+            </p>
             <div class="card-links">
-              <a href="#" class="link">GitHub &rarr;</a>
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="card-header">
-              <h3 class="card-title">Project Name</h3>
-              <span class="card-tag">Tool</span>
-            </div>
-            <p class="card-desc">Short description of what this project does and why it matters. Keep it one or two sentences.</p>
-            <div class="card-links">
-              <a href="#" class="link">GitHub &rarr;</a>
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="card-header">
-              <h3 class="card-title">Project Name</h3>
-              <span class="card-tag">Research</span>
-            </div>
-            <p class="card-desc">Short description of what this project does and why it matters. Keep it one or two sentences.</p>
-            <div class="card-links">
-              <a href="#" class="link">Read More &rarr;</a>
+              <a href="https://github.com/patrickputmansec/beacon" class="link" target="_blank" rel="noopener">GitHub &rarr;</a>
             </div>
           </article>
         </div>
@@ -127,21 +110,14 @@
     <section class="section section-alt" id="writing">
       <div class="container">
         <h2 class="section-title">Writing</h2>
-        <p class="section-sub">I write about security research and engineering over at <a href="#" class="link">[Your Blog / Company Blog]</a>. A few highlights:</p>
-        <ul class="post-list">
-          <li class="post-item">
-            <a href="#" class="post-title">Post Title Goes Here</a>
-            <span class="post-meta">Month YYYY &middot; [Publication]</span>
-          </li>
-          <li class="post-item">
-            <a href="#" class="post-title">Post Title Goes Here</a>
-            <span class="post-meta">Month YYYY &middot; [Publication]</span>
-          </li>
-          <li class="post-item">
-            <a href="#" class="post-title">Post Title Goes Here</a>
-            <span class="post-meta">Month YYYY &middot; [Publication]</span>
-          </li>
-        </ul>
+        <p class="section-sub">
+          I write about CI/CD security, cloud infrastructure, Kubernetes, and
+          identity systems over at
+          <a href="https://www.stormbane.net" class="link" target="_blank" rel="noopener">Stormbane Security</a>
+          — a security company I founded focused on helping organizations
+          understand and reduce their real-world attack surface.
+        </p>
+        <a href="https://www.stormbane.net" class="btn btn-ghost" target="_blank" rel="noopener">Read the Blog &rarr;</a>
       </div>
     </section>
 
@@ -150,31 +126,31 @@
       <div class="container container-narrow">
         <h2 class="section-title">Contact</h2>
         <p class="section-sub">
-          Best way to reach me is via email or Twitter/X. I'm open to
-          consulting engagements, research collaboration, and interesting
-          conversations.
+          Open to consulting engagements, research collaboration, and
+          interesting conversations about CI/CD, cloud, Kubernetes, or
+          identity security.
         </p>
         <div class="contact-links">
-          <a href="mailto:you@example.com" class="contact-item">
+          <a href="mailto:putman.patrick@gmail.com" class="contact-item">
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
               <polyline points="22,6 12,13 2,6"/>
             </svg>
-            you@example.com
+            putman.patrick@gmail.com
           </a>
-          <a href="https://github.com/yourusername" class="contact-item" target="_blank" rel="noopener">
+          <a href="https://github.com/patrickputmansec" class="contact-item" target="_blank" rel="noopener">
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
             </svg>
-            GitHub
+            github.com/patrickputmansec
           </a>
-          <a href="https://linkedin.com/in/yourusername" class="contact-item" target="_blank" rel="noopener">
+          <a href="https://linkedin.com/in/patrickputman" class="contact-item" target="_blank" rel="noopener">
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
               <rect x="2" y="9" width="4" height="12"/>
               <circle cx="4" cy="4" r="2"/>
             </svg>
-            LinkedIn
+            linkedin.com/in/patrickputman
           </a>
         </div>
       </div>
@@ -183,7 +159,7 @@
 
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; <span id="year"></span> Patrick. All rights reserved.</p>
+      <p>&copy; <span id="year"></span> Patrick Putman. All rights reserved.</p>
     </div>
   </footer>
 
