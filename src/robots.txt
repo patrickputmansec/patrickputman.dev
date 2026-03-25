@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://patrickputman.dev/sitemap.xml
+Sitemap: https://www.patrickputman.dev/sitemap.xml
