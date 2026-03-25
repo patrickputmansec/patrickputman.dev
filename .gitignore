@@ -1,0 +1,32 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Secrets / environment — never commit these
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+credentials/
+
+# Build artifacts
+dist/
+build/
+*.log
+
+# Node (if you ever add a build step)
+node_modules/
+npm-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
