@@ -11,9 +11,9 @@ import { StaggerGrid } from "@/components/effects/StaggerGrid";
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex items-center justify-center px-4 py-12 sm:px-6 lg:px-10">
+    <main className="min-h-screen flex items-center justify-center px-3 py-6 sm:px-4 lg:px-6">
       <StaggerGrid>
-        <div className="w-full max-w-6xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 auto-rows-[minmax(140px,auto)]">
+        <div className="w-full max-w-[1320px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 auto-rows-[minmax(160px,auto)]">
           {/* Row 1 */}
           <NameCard />
           <LocationCard />
