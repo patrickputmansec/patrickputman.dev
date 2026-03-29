@@ -8,12 +8,25 @@ import { StormbaneCard } from "@/components/cards/StormbaneCard";
 import { LatestPostCard } from "@/components/cards/LatestPostCard";
 import { ContactCard } from "@/components/cards/ContactCard";
 import { StaggerGrid } from "@/components/effects/StaggerGrid";
+import { MatrixRain } from "@/components/effects/MatrixRain";
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex items-center justify-center px-3 py-6 sm:px-4 lg:px-6">
+    <main className="relative min-h-screen flex items-center justify-center px-3 py-6 sm:px-4 lg:px-6 overflow-hidden">
+      <MatrixRain />
+
+      {/* Vignette edges */}
+      <div
+        className="fixed inset-0 pointer-events-none z-[1]"
+        style={{
+          background:
+            "radial-gradient(ellipse at center, transparent 50%, var(--color-void) 100%)",
+        }}
+        aria-hidden="true"
+      />
+
       <StaggerGrid>
-        <div className="w-full max-w-[1320px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 auto-rows-[minmax(160px,auto)]">
+        <div className="relative z-10 w-full max-w-[1320px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 auto-rows-[minmax(160px,auto)]">
           {/* Row 1 */}
           <NameCard />
           <LocationCard />
