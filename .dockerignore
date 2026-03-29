@@ -1,28 +1,12 @@
-# Git
 .git/
 .gitignore
-
-# CI/CD config — not needed in image
-.github/
-
-# Editor / OS noise
-.DS_Store
-.vscode/
-.idea/
-*.swp
-*~
-
-# Secrets — belt-and-suspenders
+node_modules/
+.next/
+out/
+src/
 .env
 .env.*
-*.pem
-*.key
-secrets/
-credentials/
-
-# Docs
-README.md
-*.md
-
-# Logs
+.github/
+.DS_Store
 *.log
+*.md
