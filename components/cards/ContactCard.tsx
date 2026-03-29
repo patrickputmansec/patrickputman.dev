@@ -40,19 +40,20 @@ const links: { icon: ComponentType<SVGProps<SVGSVGElement>>; label: string; href
 
 export function ContactCard() {
   return (
-    <div className="col-span-2 rounded-2xl border border-edge bg-panel p-6 sm:p-8">
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
+    <div className="col-span-2 rounded-2xl border border-edge bg-panel p-5 sm:p-6 flex flex-col justify-between">
+      <p className="text-xs font-medium text-mist uppercase tracking-wide mb-4">
+        Connect
+      </p>
+      <div className="flex flex-col gap-2.5">
         {links.map(({ icon: Icon, label, href }) => (
           <a
             key={href}
             href={href}
             target={href.startsWith("mailto:") ? undefined : "_blank"}
             rel={href.startsWith("mailto:") ? undefined : "noopener noreferrer"}
-            className="flex items-center gap-3 text-mist hover:text-ink transition-colors group"
+            className="flex items-center gap-3 rounded-lg bg-surface border border-edge px-3.5 py-2.5 text-mist hover:text-ink hover:border-bolt/40 transition-colors group"
           >
-            <div className="w-9 h-9 rounded-lg bg-surface border border-edge flex items-center justify-center group-hover:border-bolt/40 transition-colors flex-shrink-0">
-              <Icon width={16} height={16} />
-            </div>
+            <Icon width={15} height={15} className="flex-shrink-0" />
             <span className="text-xs sm:text-sm truncate">{label}</span>
           </a>
         ))}

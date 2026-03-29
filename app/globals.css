@@ -1,15 +1,15 @@
 @import "tailwindcss";
 
 @theme {
-  --color-void: #0a0a0f;
-  --color-panel: #111218;
-  --color-surface: #161822;
-  --color-edge: #1e2030;
-  --color-bolt: #5b7ee8;
-  --color-bolt-light: #7b96ef;
-  --color-ink: #d8dae4;
-  --color-mist: #868896;
-  --color-dim: #4d5060;
+  --color-void: #08080d;
+  --color-panel: #12131c;
+  --color-surface: #1a1b28;
+  --color-edge: #2a2d42;
+  --color-bolt: #6b8cf0;
+  --color-bolt-light: #8da6f5;
+  --color-ink: #e4e6f0;
+  --color-mist: #8b8ea2;
+  --color-dim: #505370;
   --color-ok: #34d399;
   --color-ok-dim: color-mix(in srgb, #34d399 15%, transparent);
   --color-warn: #f0c75e;
@@ -68,4 +68,35 @@ h1, h2, h3, h4 {
 
 @utility animate-pulse-dot {
   animation: pulse-dot 2s ease-in-out infinite;
+}
+
+@keyframes blink-caret {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@utility animate-blink-caret {
+  animation: blink-caret 1s step-end infinite;
+}
+
+@keyframes matrix-fall {
+  0% { transform: translateY(-100%); opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { transform: translateY(100vh); opacity: 0; }
+}
+
+@keyframes scanline-sweep {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100vh); }
+}
+
+@utility scanline-overlay {
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 0, 0, 0.03) 2px,
+    rgba(0, 0, 0, 0.03) 4px
+  );
 }
