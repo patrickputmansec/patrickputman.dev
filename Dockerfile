@@ -1,16 +1,17 @@
-# Build stage — copy static files
-FROM nginx:1.27-alpine AS final
+FROM --platform=$BUILDPLATFORM node:22-alpine AS builder
+WORKDIR /app
+COPY package*.json ./
+RUN npm ci
+COPY . .
+RUN npm run build
 
-# Remove default nginx content
+FROM nginx:1.27-alpine
+
 RUN rm -rf /usr/share/nginx/html/*
 
-# Copy site source
-COPY src/ /usr/share/nginx/html/
-
-# Copy custom nginx config
+COPY --from=builder /app/out /usr/share/nginx/html
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
-# Drop privileges where possible
 RUN chown -R nginx:nginx /usr/share/nginx/html \
     && chmod -R 755 /usr/share/nginx/html
 
