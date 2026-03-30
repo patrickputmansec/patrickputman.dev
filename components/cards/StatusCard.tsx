@@ -1,8 +1,8 @@
 export function StatusCard() {
   return (
-    <div className="relative card-base p-5 overflow-hidden font-mono flex flex-col justify-between">
+    <div className="relative card-base p-4 overflow-hidden font-mono flex flex-col justify-between">
       <div className="absolute inset-0 scanline-overlay pointer-events-none" aria-hidden="true" />
-      <div className="relative space-y-2 text-xs leading-relaxed">
+      <div className="relative space-y-1.5 text-[11px] leading-normal">
         <div className="flex items-center justify-between">
           <span className="text-dim text-[10px] tracking-wider">SYS.STATUS</span>
           <span className="text-neon text-[10px] flex items-center gap-1.5">
