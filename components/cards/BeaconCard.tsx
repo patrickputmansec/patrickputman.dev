@@ -15,26 +15,25 @@ export function BeaconCard() {
       <div className="absolute inset-0 scanline-overlay pointer-events-none z-10" aria-hidden="true" />
 
       <div className="relative z-20">
-        <div className="rounded-lg bg-void border border-neon/10 overflow-hidden mb-4">
-          <div className="flex items-center gap-1.5 px-3 py-2 border-b border-neon/10">
+        <div className="rounded-lg bg-void border border-neon/10 overflow-hidden mb-3">
+          <div className="flex items-center gap-1.5 px-2.5 py-1.5 border-b border-neon/10">
             <span className="w-2 h-2 rounded-full bg-crit/70" />
             <span className="w-2 h-2 rounded-full bg-warn/70" />
             <span className="w-2 h-2 rounded-full bg-neon/70" />
             <span className="text-[10px] text-dim font-mono ml-2">beacon v0.4.1</span>
           </div>
-          <div className="p-3 font-mono text-[11px] leading-[1.6] space-y-0.5">
+          <div className="p-2.5 font-mono text-[11px] leading-[1.5]">
             <p className="text-neon">
               <span className="text-neon/60">$</span> beacon scan --target api.example.com
             </p>
-            <p className="text-neon/40">[*] Enumerating subdomains...</p>
             <p className="text-neon/40">[*] Scanning target surface...</p>
-            <p className="text-neon/60">[+] Port 443/tcp open — TLS 1.2 (weak cipher)</p>
-            <p className="text-warn">[!] CVE-2024-3094 — xz backdoor detected</p>
-            <p className="text-neon/60">[+] Exposed .env at /.env — 3 secrets</p>
-            <p className="text-neon">[✓] 3 findings · 1 critical · report ready</p>
+            <p className="text-neon/60">[+] Port 443 — TLS 1.2 (weak cipher)</p>
+            <p className="text-warn">[!] CVE-2024-3094 — xz backdoor</p>
+            <p className="text-neon/60">[+] Exposed .env — 3 secrets</p>
+            <p className="text-neon">[✓] 3 findings · 1 critical</p>
             <p className="text-neon/80">
               <span className="text-neon/60">$</span>
-              <span className="inline-block w-[6px] h-[13px] bg-neon ml-1 animate-blink-caret" />
+              <span className="inline-block w-[6px] h-[12px] bg-neon ml-1 animate-blink-caret" />
             </p>
           </div>
         </div>

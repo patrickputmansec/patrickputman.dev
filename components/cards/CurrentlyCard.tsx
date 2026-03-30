@@ -1,6 +1,6 @@
 export function CurrentlyCard() {
   return (
-    <div className="relative card-base p-6 flex flex-col justify-between overflow-hidden">
+    <div className="relative card-base p-5 flex flex-col justify-between overflow-hidden">
       <div
         className="absolute bottom-0 left-0 w-[120px] h-[120px] rounded-full bg-neon/[0.04] blur-[60px] pointer-events-none"
         aria-hidden="true"
