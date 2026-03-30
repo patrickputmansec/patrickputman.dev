@@ -9,7 +9,7 @@ const skills = [
 
 export function WhatIDoCard() {
   return (
-    <div className="relative col-span-2 card-base p-6 sm:p-8 flex flex-col justify-center overflow-hidden">
+    <div className="relative col-span-1 sm:col-span-2 card-base p-5 sm:p-8 flex flex-col justify-center overflow-hidden min-w-0">
       <div className="absolute inset-0 scanline-overlay pointer-events-none" aria-hidden="true" />
       <p className="text-[10px] font-mono font-medium text-neon/60 uppercase tracking-widest mb-4">
         // what_i_do

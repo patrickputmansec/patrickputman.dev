@@ -12,7 +12,7 @@ import { MatrixRain } from "@/components/effects/MatrixRain";
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen flex items-center justify-center px-4 py-12 sm:px-6 lg:px-8 overflow-hidden">
+    <main className="relative min-h-screen flex items-start sm:items-center justify-center px-3 py-8 sm:px-6 sm:py-12 lg:px-8 overflow-x-hidden overflow-y-auto">
       <MatrixRain />
 
       <div
@@ -25,7 +25,7 @@ export default function Home() {
       />
 
       <StaggerGrid>
-        <div className="relative z-10 w-full max-w-6xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5">
+        <div className="relative z-10 w-full max-w-6xl min-w-0 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-3.5">
           {/* Row 1 */}
           <NameCard />
           <StatusCard />
