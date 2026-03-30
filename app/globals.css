@@ -1,18 +1,18 @@
 @import "tailwindcss";
 
 @theme {
-  --color-void: #08080d;
-  --color-panel: #12131c;
-  --color-surface: #1a1b28;
-  --color-edge: #2a2d42;
-  --color-bolt: #6b8cf0;
-  --color-bolt-light: #8da6f5;
-  --color-ink: #e4e6f0;
-  --color-mist: #8b8ea2;
-  --color-dim: #505370;
-  --color-ok: #34d399;
-  --color-ok-dim: color-mix(in srgb, #34d399 15%, transparent);
-  --color-warn: #f0c75e;
+  --color-void: #0a0a0a;
+  --color-panel: #0d1117;
+  --color-surface: #161b22;
+  --color-edge: #30363d;
+  --color-neon: #00ff41;
+  --color-neon-dim: #00cc33;
+  --color-ink: #e6edf3;
+  --color-mist: #8b949e;
+  --color-dim: #484f58;
+  --color-ok: #00ff41;
+  --color-warn: #f97316;
+  --color-crit: #ef4444;
 
   --font-sans: var(--font-inter);
   --font-display: var(--font-space-grotesk);
@@ -36,8 +36,8 @@ h1, h2, h3, h4 {
 }
 
 ::selection {
-  background-color: color-mix(in srgb, var(--color-bolt) 30%, transparent);
-  color: var(--color-ink);
+  background-color: color-mix(in srgb, var(--color-neon) 25%, transparent);
+  color: #fff;
 }
 
 ::-webkit-scrollbar { width: 6px; }
@@ -79,24 +79,19 @@ h1, h2, h3, h4 {
   animation: blink-caret 1s step-end infinite;
 }
 
-@keyframes matrix-fall {
-  0% { transform: translateY(-100%); opacity: 0; }
-  10% { opacity: 1; }
-  90% { opacity: 1; }
-  100% { transform: translateY(100vh); opacity: 0; }
-}
-
-@keyframes scanline-sweep {
-  0% { transform: translateY(-100%); }
-  100% { transform: translateY(100vh); }
-}
-
 @utility scanline-overlay {
   background: repeating-linear-gradient(
     0deg,
     transparent,
     transparent 2px,
-    rgba(0, 0, 0, 0.03) 2px,
-    rgba(0, 0, 0, 0.03) 4px
+    rgba(0, 0, 0, 0.04) 2px,
+    rgba(0, 0, 0, 0.04) 4px
   );
+}
+
+@utility card-base {
+  background-color: var(--color-panel);
+  border: 1px solid var(--color-edge);
+  border-radius: 1rem;
+  transition: border-color 0.2s;
 }

@@ -40,10 +40,16 @@ const links: { icon: ComponentType<SVGProps<SVGSVGElement>>; label: string; href
 
 export function ContactCard() {
   return (
-    <div className="col-span-2 rounded-2xl border border-edge bg-panel p-5 sm:p-6 flex flex-col justify-between">
-      <p className="text-xs font-medium text-mist uppercase tracking-wide mb-4">
-        Connect
-      </p>
+    <div className="relative col-span-2 card-base p-5 sm:p-6 flex flex-col justify-between overflow-hidden">
+      <div className="absolute inset-0 scanline-overlay pointer-events-none" aria-hidden="true" />
+      <div>
+        <p className="text-[10px] font-mono font-medium text-neon/60 uppercase tracking-widest mb-2">
+          // connect
+        </p>
+        <p className="text-mist text-xs mb-4">
+          Have a security concern or need an audit? Reach out.
+        </p>
+      </div>
       <div className="flex flex-col gap-2.5">
         {links.map(({ icon: Icon, label, href }) => (
           <a
@@ -51,10 +57,10 @@ export function ContactCard() {
             href={href}
             target={href.startsWith("mailto:") ? undefined : "_blank"}
             rel={href.startsWith("mailto:") ? undefined : "noopener noreferrer"}
-            className="flex items-center gap-3 rounded-lg bg-surface border border-edge px-3.5 py-2.5 text-mist hover:text-ink hover:border-bolt/40 transition-colors group"
+            className="flex items-center gap-3 rounded-lg bg-surface border border-edge px-4 py-3 text-mist hover:text-neon hover:border-neon/30 transition-colors group"
           >
-            <Icon width={15} height={15} className="flex-shrink-0" />
-            <span className="text-xs sm:text-sm truncate">{label}</span>
+            <Icon width={16} height={16} className="flex-shrink-0" />
+            <span className="text-sm font-mono truncate">{label}</span>
           </a>
         ))}
       </div>

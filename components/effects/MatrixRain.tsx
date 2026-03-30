@@ -33,7 +33,7 @@ export function MatrixRain() {
     window.addEventListener("resize", resize);
 
     function draw() {
-      ctx!.fillStyle = "rgba(8, 8, 13, 0.08)";
+      ctx!.fillStyle = "rgba(10, 10, 10, 0.08)";
       ctx!.fillRect(0, 0, canvas!.width, canvas!.height);
 
       ctx!.font = `${FONT_SIZE}px monospace`;
@@ -45,11 +45,11 @@ export function MatrixRain() {
 
         const brightness = Math.random();
         if (brightness > 0.95) {
-          ctx!.fillStyle = "rgba(52, 211, 153, 0.9)";
+          ctx!.fillStyle = "rgba(0, 255, 65, 0.9)";
         } else if (brightness > 0.7) {
-          ctx!.fillStyle = "rgba(52, 211, 153, 0.3)";
+          ctx!.fillStyle = "rgba(0, 255, 65, 0.25)";
         } else {
-          ctx!.fillStyle = "rgba(52, 211, 153, 0.08)";
+          ctx!.fillStyle = "rgba(0, 255, 65, 0.06)";
         }
 
         ctx!.fillText(char, x, y);

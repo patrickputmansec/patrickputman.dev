@@ -32,8 +32,8 @@ function HeatmapGrid() {
           width="10"
           height="10"
           rx="2"
-          fill={opacity === 0 ? "var(--color-edge)" : "var(--color-ok)"}
-          opacity={opacity === 0 ? 1 : opacity}
+          fill={opacity === 0 ? "var(--color-edge)" : "var(--color-neon)"}
+          opacity={opacity === 0 ? 0.6 : opacity}
         />
       ))}
     </svg>
@@ -46,7 +46,7 @@ export function GitHubCard() {
       href="https://github.com/patrickputmansec"
       target="_blank"
       rel="noopener noreferrer"
-      className="rounded-2xl border border-edge bg-panel p-6 flex flex-col justify-between hover:border-bolt/40 transition-colors group"
+      className="relative card-base p-6 flex flex-col justify-between hover:border-neon/30 transition-colors group overflow-hidden"
     >
       <div className="mb-4">
         <HeatmapGrid />
@@ -54,11 +54,11 @@ export function GitHubCard() {
       <div className="flex items-center justify-between">
         <div>
           <p className="text-ink font-semibold text-sm">GitHub</p>
-          <p className="text-mist text-xs">@patrickputmansec</p>
+          <p className="text-mist font-mono text-xs">@patrickputmansec</p>
         </div>
         <ExternalLink
           size={14}
-          className="text-dim group-hover:text-bolt transition-colors"
+          className="text-dim group-hover:text-neon transition-colors"
         />
       </div>
     </a>
