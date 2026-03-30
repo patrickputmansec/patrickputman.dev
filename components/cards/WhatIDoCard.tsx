@@ -5,8 +5,6 @@ const skills = [
   "Identity & OIDC",
   "Terraform",
   "Pentesting",
-  "Web3 Security",
-  "AI/ML Security",
 ];
 
 export function WhatIDoCard() {
@@ -29,9 +27,8 @@ export function WhatIDoCard() {
       <p className="text-mist text-sm leading-relaxed">
         I find and fix the attack surface that modern organizations expose as
         they scale — CI/CD pipelines, cloud infrastructure, Kubernetes clusters,
-        identity systems, smart contracts, and ML pipelines. From automated
-        scanning to manual pentesting, I turn exposed infrastructure into
-        hardened systems.
+        and identity systems. From automated scanning to manual pentesting,
+        I turn exposed infrastructure into hardened systems.
       </p>
     </div>
   );
