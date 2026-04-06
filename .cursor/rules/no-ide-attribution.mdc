@@ -1,0 +1,14 @@
+---
+description: No IDE or AI tool branding in git metadata or GitHub UI text
+alwaysApply: true
+---
+
+# Commits and pull requests
+
+Do not add phrases such as "Made with Cursor", "Generated with Claude", or similar IDE/AI product attribution to:
+
+- Pull request titles or descriptions
+- Commit messages
+- Issue or discussion bodies you draft for the user
+
+Write human, project-focused summaries instead (what changed and why).

@@ -40,7 +40,7 @@ const links: { icon: ComponentType<SVGProps<SVGSVGElement>>; label: string; href
 
 export function ContactCard() {
   return (
-    <div className="relative col-span-2 card-base p-5 sm:p-6 flex flex-col justify-between overflow-hidden">
+    <div className="relative col-span-1 sm:col-span-2 card-base p-5 sm:p-6 flex flex-col justify-between overflow-hidden min-w-0">
       <div className="absolute inset-0 scanline-overlay pointer-events-none" aria-hidden="true" />
       <div>
         <p className="text-[10px] font-mono font-medium text-neon/60 uppercase tracking-widest mb-2">
@@ -57,10 +57,10 @@ export function ContactCard() {
             href={href}
             target={href.startsWith("mailto:") ? undefined : "_blank"}
             rel={href.startsWith("mailto:") ? undefined : "noopener noreferrer"}
-            className="flex items-center gap-3 rounded-lg bg-surface border border-edge px-4 py-3 text-mist hover:text-neon hover:border-neon/30 transition-colors group"
+            className="flex items-center gap-3 rounded-lg bg-surface border border-edge px-3 py-2.5 sm:px-4 sm:py-3 text-mist hover:text-neon hover:border-neon/30 transition-colors group min-w-0"
           >
             <Icon width={16} height={16} className="flex-shrink-0" />
-            <span className="text-sm font-mono truncate">{label}</span>
+            <span className="text-xs sm:text-sm font-mono truncate min-w-0">{label}</span>
           </a>
         ))}
       </div>

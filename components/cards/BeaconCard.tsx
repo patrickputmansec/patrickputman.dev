@@ -6,7 +6,7 @@ export function BeaconCard() {
       href="https://github.com/patrickputmansec/beacon"
       target="_blank"
       rel="noopener noreferrer"
-      className="relative card-base border-neon/15 p-5 flex flex-col justify-between hover:border-neon/30 transition-colors group overflow-hidden"
+      className="relative card-base border-neon/15 p-4 sm:p-5 flex flex-col justify-between hover:border-neon/30 transition-colors group overflow-hidden min-w-0"
     >
       <div
         className="absolute -top-10 -left-10 w-[200px] h-[200px] rounded-full bg-neon/[0.05] blur-[80px] pointer-events-none"
@@ -15,14 +15,14 @@ export function BeaconCard() {
       <div className="absolute inset-0 scanline-overlay pointer-events-none z-10" aria-hidden="true" />
 
       <div className="relative z-20">
-        <div className="rounded-lg bg-void border border-neon/10 overflow-hidden mb-3">
-          <div className="flex items-center gap-1.5 px-2.5 py-1.5 border-b border-neon/10">
+        <div className="rounded-lg bg-void border border-neon/10 overflow-hidden mb-3 min-w-0">
+          <div className="flex items-center gap-1.5 px-2.5 py-1.5 border-b border-neon/10 min-w-0">
             <span className="w-2 h-2 rounded-full bg-crit/70" />
             <span className="w-2 h-2 rounded-full bg-warn/70" />
             <span className="w-2 h-2 rounded-full bg-neon/70" />
             <span className="text-[10px] text-dim font-mono ml-2">beacon v0.4.1</span>
           </div>
-          <div className="p-2.5 font-mono text-[11px] leading-[1.5]">
+          <div className="p-2.5 font-mono text-[10px] sm:text-[11px] leading-[1.5] overflow-x-auto">
             <p className="text-neon">
               <span className="text-neon/60">$</span> beacon scan --target api.example.com
             </p>
